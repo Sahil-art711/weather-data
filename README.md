@@ -130,3 +130,59 @@ if __name__ == "__main__":
 
     # Complexity analysis
     system.analyzeComplexity()
+
+
+
+
+    
+#sub problem 1
+ class WeatherRecord:
+    def __init__(self, date="", city="", temperature=0.0):
+        self.date = date
+        self.city = city
+        self.temperature = temperature
+
+
+
+#sub problem 2
+self.temperatureData = [
+    [self.SENTINEL for _ in range(len(cities))]
+    for _ in range(len(years))
+]
+ 
+
+
+
+#sub problem 3
+ def rowMajorAccess(self):
+    for i in range(len(self.years)):
+        for j in range(len(self.cities)):
+            print(f"[{self.years[i]},{self.cities[j]}]: {self.temperatureData[i][j]}\t", end="")
+        print()
+
+def columnMajorAccess(self):
+    for j in range(len(self.cities)):
+        for i in range(len(self.years)):
+            print(f"[{self.years[i]},{self.cities[j]}]: {self.temperatureData[i][j]}\t", end="")
+        print()
+
+
+
+
+#sub problem 4
+def handleSparseData(self):
+    for i in range(len(self.years)):
+        for j in range(len(self.cities)):
+            if self.temperatureData[i][j] != self.SENTINEL:
+                print(f"[{self.years[i]},{self.cities[j]}]: {self.temperatureData[i][j]}")
+
+
+
+
+#sub problem 5
+def analyzeComplexity(self):
+    print("\nTime Complexity:")
+    print("Insert: O(1)\nRetrieve: O(1)\nDelete: O(1)")
+    print("\nSpace Complexity:")
+    print("O(n*m) where n = years, m = cities")
+
